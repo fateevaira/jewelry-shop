@@ -1,38 +1,187 @@
-.App {
-  text-align: center;
+body{
+    background-color: black
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+    display: flex;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    text-transform: uppercase;
+    font-size: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2{
+    text-transform: capitalize;
 }
 
-.App-link {
-  color: #61dafb;
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cards{
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.addBtn{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btnChoise{
+    padding: 10px;
+    border: none;
+    margin: 0px 20px 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.contContact {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: rgb(117, 186, 226);
+}
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.aboutText {
+    align-self: center;
+    width: 500px;
+}
+
+.aboutPerson {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.showBtn{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    border: 1px white solid;
+}
+
+.btnPhoto {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: black;
+    border: 1px white solid;
+    padding: 5px;
+    margin: 5px;
+    width: 80px;
+}
+.textName{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+.aboutMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 15px;
+}
+
+.link {
+padding-left: 50px;
+padding-right: 50px;
+text-decoration: none;
+text-transform: uppercase;
+font-family: 'Roboto', sans-serif;
+font-size: 20px;
+}
+
+@media all and (max-width: 600px){
+    .header{
+        font-size: 20px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    .link {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+        }
+
+    .aboutText {
+        width: 300px;
+    }
+
+    .btnChoise{
+        padding: 5px;
+        margin: 0px 10px 10px 10px;
+    }
+}
+
+@media all and (max-width: 300px){
+    .header{
+        font-size: 20px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    .link {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+    }
+
+    .aboutText {
+        width: 300px;
+    }
+
+    .btnChoise{
+        padding: 5px;
+        margin: 0px 10px 10px 10px;
+    }
 }
